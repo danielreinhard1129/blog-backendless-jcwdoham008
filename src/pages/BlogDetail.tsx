@@ -52,7 +52,7 @@ function BlogDetail() {
       <img
         src={blog.thumbnail || ""}
         alt="thumbnail blog"
-        className="h-[400px] w-full object-cover"
+        className="h-100 w-full object-cover"
       />
       <h1 className="text-3xl font-bold">Blog Detail - {blog.title}</h1>
 

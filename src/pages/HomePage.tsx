@@ -14,7 +14,9 @@ function HomePage() {
 
   const getBlogs = async () => {
     try {
-      const { data } = await axiosInstance.get<Blog[]>("/data/Blogs");
+      const { data } = await axiosInstance.get<Blog[]>(
+        "/data/Blogs?sortBy=%60created%60%20desc",
+      );
       setBlogs(data);
     } catch (error) {
       console.log(error);
